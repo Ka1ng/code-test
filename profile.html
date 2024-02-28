@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./index.css">
+    <link rel="stylesheet" href="./vendors/bootstrap/bootstrap.css">
+    <link rel="stylesheet" href="./vendors/fontawesome/css/all.css">
+    <link rel="stylesheet" href="./profile.css">
+</head>
+
+<body>
+    <!-- navbar starts -->
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container">
+            <a class="navbar-brand" href="#"><i class="fab fa-wolf-pack-battalion"></i> CodeCrafters</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0 ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="/">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/skill.html">Skills</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="/profile.html">Profile</a>
+                    </li>
+                </ul>
+                <form class="d-flex">
+                    <a href="tel: 09123456789"><button class="btn btn-outline-success" type="button">Call
+                            now</button></a>
+                </form>
+            </div>
+        </div>
+    </nav>
+    <!-- navbar ends -->
+
+    <!-- header starts -->
+    <div class="container-fluid" id="profileHeader">
+        <div class="profileHeaderSection">
+
+            <img class="profilePic" src="./Developer Profile/Images/profile.jpg" alt="">
+
+            <div class="profileHeaderTextContainer">
+                <div class="text">A Quick <span class="bold">Bio</span></div>
+                <div class="profileText">Meet CodeCrafter, a talented web developer with three years of hands-on
+                    experience in crafting dynamic
+                    and visually appealing websites. Based in the vibrant tech scene of Myanmar, CodeCrafter brings a
+                    unique
+                    perspective to every project, combining technical expertise with a deep understanding of user.
+                    CodeCrafter embarked on their journey into the world of web
+                    development with a burning curiosity and a determination to master the craft. Graduating with a
+                    degree
+                    in Computer Science from a prestigious university. CodeCrafters quickly found their niche in
+                    front-end
+                    development, where they could blend creativity with code to bring ideas to life. Despite their
+                    already
+                    impressive skill set, CodeCrafter is committed to continuous learning and staying abreast of the
+                    latest trends
+                    and technologies in web development. They actively seek out opportunities to expand their knowledge,
+                    whether through online courses, attending workshops, or participating in community events.
+                    Throughout their career, CodeCrafter has contributed to a diverse range of projects, each showcasing
+                    their
+                    creativity and attention to detail. From crafting elegant UI designs to optimizing website
+                    performance, CodeCrafter approaches every project with enthusiasm and a commitment to delivering
+                    results that exceed
+                    client expectations. In CodeCrafter, you'll find a dedicated web developer with a proven track
+                    record of
+                    success and a genuine passion for creating exceptional digital experiences. Whether you're looking
+                    to
+                    revamp your website, develop a new web application, or simply enhance your online presence,
+                    CodeCrafter
+                    has the skills, experience, and creativity to bring your vision to life. Get in touch today and let
+                    CodeCrafters
+                    help you turn your ideas into reality.</div>
+            </div>
+        </div>
+        <div class="profileHeaderTextContainer expSection">
+            <div class="text"><span class="bold">Experience</span></div>
+            <div class="expSectionTextContainer">
+                <div class="profileText">Over the past three years, CodeCrafter has honed their skills through a variety of projects, from small
+                    business websites to complex web applications. Their proficiency in HTML, CSS, and JavaScript forms the
+                    foundation of their work, allowing them to build responsive and intuitive interfaces that engage users
+                    effectively</div>
+                <!-- <div class="circle"></div> -->
+            </div>
+            <div class="expSectionTextContainer">
+                <div class="profileText">One of CodeCrafter's notable strengths is their expertise in jQuery, a JavaScript library that enables them to
+                    streamline development processes and create interactive features with ease. Their ability to harness the
+                    power of jQuery has been instrumental in enhancing user interactions and optimizing website
+                    performance.</div>
+                <!-- <div class="circle"></div> -->
+            </div>
+            <div class="expSectionTextContainer">
+                <div class="profileText">In addition to their technical skills, CodeCrafter is well-versed in version control systems like Git, enabling
+                    seamless collaboration with team members and ensuring code quality and integrity throughout the
+                    development lifecycle.</div>
+                <!-- <div class="circle"></div> -->
+            </div>
+        </div>
+        <div class="profileHeaderSection">
+
+            <img class="engagePic" src="./Developer Profile/Images/engagement.jpg" alt="">
+
+            <div class="profileHeaderTextContainer">
+                <div class="text"><span class="bold">Community Engagement</span></div>
+                <div class="profileText">Beyond their professional endeavors, CodeCrafter is passionate about giving back to the developer
+                    community. They frequently participate in local meetups and events, where they share insights,
+                    exchange ideas, and mentor aspiring developers, fostering a culture of collaboration and growth within
+                    the tech ecosystem of Myanmar.</div>
+            </div>
+        </div>
+    </div>
+
+
+      <!-- footer starts -->
+      <div class="container-fluid" id="footer">
+        <div class="footerContainer">
+            <div class="text">Phone No: 09 123456789</div>
+            <div class="text">Email Address: testmail@gmail.com</div>
+        </div>
+    </div>
+    <!-- footer ends -->
+
+
+
+
+
+    <script src="./vendors/bootstrap/bootstrap.bundle.min.js"></script>
+    <script src="./vendors/jquery/jquery.js"></script>
+    <script>
+        $(document).ready(() => {
+            $('.nav-link').click((e) => {
+                $('.nav-link').removeClass('active')
+                $(e.target).addClass('active')
+            })
+        })
+    </script>
+</body>
+
+</html>
